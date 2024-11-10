@@ -12,9 +12,9 @@
 / {
     macros {
         rgb_layer: rgb_layer {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_1to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
             label = "RGB_LAYER";
         };
     };
@@ -30,10 +30,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U                                       &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J                                       &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M                                       &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                              &kp LGUI  &none  &kp SPACE    &kp RET  &rgb_layer RGB_COLOR_HSB_VAL(227,100,49) 1  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U                                      &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J                                      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M                                      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                              &kp LGUI  &none  &kp SPACE    &kp RET  &rgb_layer 0 RGB_COLOR_HSB_VAL(216,99,50)  &kp RALT
             >;
         };
 
