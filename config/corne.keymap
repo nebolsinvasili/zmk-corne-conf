@@ -45,9 +45,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &kp EXCL           &kp QUESTION         &kp CARET     &kp PIPE                                    &kp ASTERISK     &kp SLASH     &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS    &kp NON_US_BACKSLASH  &kp TILDE               &kp ESCAPE
-&kp BACKSPACE  &mt LEFT_ALT LEFT  &mt LEFT_SHIFT DOWN  &mt LCTRL UP  &mt TAB RIGHT                               &kp PLUS         &kp MINUS     &mt TAB LEFT_BRACKET                        &mt LCTRL RIGHT_BRACKET  &mt LEFT_SHIFT SQT    &mt LEFT_ALT SEMICOLON  &kp BACKSPACE
-&kp DELETE     &kp AT_SIGN        &kp HASH             &kp DOLLAR    &kp PERCENT                                 &kp AMPERSAND    &kp ASTERISK  &kp LEFT_BRACE                              &kp RIGHT_BRACE          &kp PERIOD            &kp COMMA               &kp LS(DELETE)
+&kp ESCAPE     &kp EXCL           &kp QUESTION         &kp CARET     &kp PIPE                                    &kp ASTERISK     &kp SLASH     &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS    &kp NON_US_BACKSLASH      &kp TILDE         &kp ESCAPE
+&kp BACKSPACE  &mt LEFT_ALT LEFT  &mt LEFT_SHIFT DOWN  &mt LCTRL UP  &mt TAB RIGHT                               &kp PLUS         &kp MINUS     &mt TAB LEFT_BRACKET                        &mt LCTRL RIGHT_BRACKET  &mt LEFT_SHIFT SEMICOLON  &mt LEFT_ALT SQT  &kp BACKSPACE
+&kp DELETE     &kp AT_SIGN        &kp HASH             &kp DOLLAR    &kp PERCENT                                 &kp AMPERSAND    &kp ASTERISK  &kp LEFT_BRACE                              &kp RIGHT_BRACE          &kp COMMA                 &kp PERIOD        &kp LS(DELETE)
                                                        &kp LGUI      &rgb_layer 0 RGB_COLOR_HSB_VAL(360,100,50)  &kp SPACE        &kp RET       &rgb_layer 2 RGB_COLOR_HSB_VAL(232,100,50)  &kp RALT
             >;
         };
