@@ -21,21 +21,27 @@
         rus: rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mo 1 &kp LEFT_WIN &kp ENTER>;
-
+            bindings = <&mo 1>;
             label = "RUS";
         };
-    };
 
-    combos {
-        compatible = "zmk,combos";
+        win_enter: win_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(ENTER)>;
+            label = "WIN_ENTER";
+        };
 
-        rus {
-            bindings = <&rus>;
-            key-positions = <36 39>;
-            layers = <0 3>;
+        rus_lay: rus_lay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&rus &win_enter>;
+
+            label = "RUS_LAY";
         };
     };
+
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
