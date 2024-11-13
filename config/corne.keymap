@@ -30,25 +30,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q           &kp W             &kp E        &kp R      &kp T        &kp Y    &kp U                                      &kp I        &kp O             &kp P              &kp ESCAPE
-&kp BACKSPACE  &mt LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D  &mt TAB F  &kp G        &kp H    &mt TAB J                                  &mt LCTRL K  &mt LEFT_SHIFT L  &mt LEFT_ALT SEMI  &kp BACKSPACE
-&kp DELETE     &kp Z           &kp X             &kp C        &kp V      &kp B        &kp N    &kp M                                      &kp COMMA    &kp DOT           &kp FSLH           &kp DELETE
-                                                 &kp LGUI     &none      &kp SPACE    &kp RET  &rgb_layer 1 RGB_COLOR_HSB_VAL(231,99,50)  &kp RALT
-            >;
-        };
-
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&kp TAB         &kp NUMBER_1           &kp NUMBER_2             &kp NUMBER_3        &kp PLUS                                  &kp ASTERISK    &kp BACKSPACE  &kp END                                     &kp HOME     &kp DEL    &kp PRINTSCREEN  &none
-&kp LEFT_SHIFT  &mt LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LCTRL NUMBER_6  &mt TAB MINUS                             &kp SLASH       &kp LEFT       &kp DOWN                                    &kp UP       &kp RIGHT  &trans           &none
-&kp N0          &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9        &kp COMMA                                 &kp PERIOD      &none          &kp PAGE_DOWN                               &kp PAGE_UP  &none      &trans           &trans
-                                                                &kp LGUI            &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &kp SPACE       &kp RET        &rgb_layer 2 RGB_COLOR_HSB_VAL(121,100,50)  &kp RALT
+&kp ESCAPE     &kp Q           &kp W             &kp E         &kp R      &kp T        &kp Y    &kp U                                      &kp I             &kp O             &kp P               &kp ESCAPE
+&kp BACKSPACE  &mt LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D   &mt TAB F  &kp G        &kp H    &mt TAB J                                  &mt LCTRL K       &mt LEFT_SHIFT L  &mt LEFT_ALT SLASH  &kp BACKSPACE
+&kp DELETE     &kp Z           &kp X             &kp C         &kp V      &kp B        &kp N    &kp M                                      &kp COMMA         &kp DOT           &kp SEMI            &kp DELETE
+                                                 &kp LEFT_GUI  &mo 1      &kp SPACE    &kp RET  &rgb_layer 2 RGB_COLOR_HSB_VAL(231,99,50)  &kp LG(LEFT_GUI)
             >;
         };
 
@@ -60,10 +45,25 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none          &kp EXCL           &kp QUESTION         &none         &none                                       &none            &kp CARET     &kp QUESTION                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &none
-&kp BACKSPACE  &mt LEFT_ALT LEFT  &mt LEFT_SHIFT DOWN  &mt LCTRL UP  &mt TAB RIGHT                               &trans           &kp MINUS     &kp EQUAL                                   &kp LBKT              &kp RBKT               &kp SEMICOLON  &kp SQT
-&kp DELETE     &kp AT_SIGN        &kp HASH             &kp DOLLAR    &kp PERCENT                                 &kp AMPERSAND    &kp ASTERISK  &kp BACKSLASH                               &kp LBRC              &kp RBRC               &kp COMMA      &kp LS(DOT)
-                                                       &kp LGUI      &rgb_layer 1 RGB_COLOR_HSB_VAL(227,100,50)  &kp SPACE        &kp RET       &rgb_layer 3 RGB_COLOR_HSB_VAL(294,100,50)  &kp RALT
+&kp ESCAPE     &kp EXCL           &kp QUESTION         &kp CARET     &kp PIPE                                    &kp ASTERISK     &kp SLASH     &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS    &kp NON_US_BACKSLASH  &kp TILDE               &kp ESCAPE
+&kp BACKSPACE  &mt LEFT_ALT LEFT  &mt LEFT_SHIFT DOWN  &mt LCTRL UP  &mt TAB RIGHT                               &kp PLUS         &kp MINUS     &mt TAB LEFT_BRACKET                        &mt LCTRL RIGHT_BRACKET  &mt LEFT_SHIFT SQT    &mt LEFT_ALT SEMICOLON  &kp BACKSPACE
+&kp DELETE     &kp AT_SIGN        &kp HASH             &kp DOLLAR    &kp PERCENT                                 &kp AMPERSAND    &kp ASTERISK  &kp LEFT_BRACE                              &kp RIGHT_BRACE          &kp PERIOD            &kp COMMA               &kp LS(DELETE)
+                                                       &kp LGUI      &rgb_layer 0 RGB_COLOR_HSB_VAL(227,100,50)  &kp SPACE        &kp RET       &rgb_layer 2 RGB_COLOR_HSB_VAL(294,100,50)  &kp RALT
+            >;
+        };
+
+        lower_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&kp ESCAPE     &kp NUMBER_1           &kp NUMBER_2             &kp NUMBER_3        &kp PLUS                                  &kp ASTERISK    &kp HOME  &kp PAGE_DOWN                               &kp PAGE_UP   &kp END               &kp PRINTSCREEN  &kp ESCAPE
+&kp BACKSPACE  &mt LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LCTRL NUMBER_6  &mt TAB MINUS                             &kp SLASH       &kp LEFT  &mt TAB DOWN                                &mt LCTRL UP  &mt LEFT_SHIFT RIGHT  &kp LEFT_ALT     &kp BACKSPACE
+&kp DELETE     &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9        &kp COMMA                                 &kp PERIOD      &none     &none                                       &none         &none                 &kp K_MENU       &kp DELETE
+                                                               &kp LGUI            &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &kp SPACE       &kp RET   &rgb_layer 3 RGB_COLOR_HSB_VAL(121,100,50)  &kp NUMBER_0
             >;
         };
 
