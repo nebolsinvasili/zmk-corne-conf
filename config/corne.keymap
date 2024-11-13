@@ -37,6 +37,22 @@
             >;
         };
 
+	rus_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  й   |  ц  |  у  |  к  |  е  |   |  н  |  г   |  ш/щ  |  з  |  х  | BSPC |
+            // | CTRL |  ф   |  ы  |  в  |  а  |  п  |   |  р  |  о   |  л    |  д  |  ж  |  '   |
+            // | SHFT |  я/э |  ч  |  с  |  м  |  и  |   |  т  |  ь/ъ |  б    |  ю  | ./, | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT   |
+
+            bindings = <
+&kp ESCAPE	&kp й		&kp Ц			&kp У		&kp К		&kp Е			&kp Н	&kp Г		&mt Щ Ш		&kp З			&kp Х		&kp ESCAPE
+&kp BACKSPACE	&mt LEFT_ALT Ф	&mt LEFT_SHIFT Ы	&mt LCTRL В	&mt TAB А	&kp П			&kp Р	&mt TAB О	&mt LCTRL Л	&mt LEFT_SHIFT Д	&mt LEFT_ALT Ж  &kp BACKSPACE
+&kp DELETE	&mt Э Я		&kp Ч			&kp С		&kp М		&kp И			&kp Т	&mt ъ ь		&kp Б		&kp Ю         		&mt DOT COMMA	&kp DELETE
+                                                 &kp LEFT_GUI  &mo 1      &kp SPACE    &kp RET  &rgb_layer 2 RGB_COLOR_HSB_VAL(231,99,50)  &kp LG(LEFT_GUI)
+            >;
+        };
+
+
         raise_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
