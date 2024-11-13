@@ -17,14 +17,23 @@
             bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
             label = "RGB_LAYER";
         };
+
+        rus: rus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&mo 1 &kp LEFT_WIN &kp ENTER>;
+
+            label = "RUS";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         rus {
-            bindings = <&mo 1>;
+            bindings = <&rus>;
             key-positions = <37 40>;
+            layers = <0 3>;
         };
     };
 
@@ -61,7 +70,7 @@
             >;
         };
 
-        raise_layer {
+        tab_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -76,7 +85,7 @@
             >;
         };
 
-        lower_layer {
+        num_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
