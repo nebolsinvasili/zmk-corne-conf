@@ -32,7 +32,7 @@
 
         rus {
             bindings = <&rus>;
-            key-positions = <37 40>;
+            key-positions = <36 39>;
             layers = <0 3>;
         };
     };
