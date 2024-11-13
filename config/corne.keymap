@@ -35,7 +35,7 @@
         rus_lay: rus_lay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&rus &win_enter>;
+            bindings = <&macro_tap>, <&rus &win_enter>;
 
             label = "RUS_LAY";
         };
