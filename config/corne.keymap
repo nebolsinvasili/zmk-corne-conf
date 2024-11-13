@@ -48,7 +48,7 @@
 &kp ESCAPE     &kp EXCL           &kp QUESTION         &kp CARET     &kp PIPE                                    &kp ASTERISK     &kp SLASH     &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS    &kp NON_US_BACKSLASH  &kp TILDE               &kp ESCAPE
 &kp BACKSPACE  &mt LEFT_ALT LEFT  &mt LEFT_SHIFT DOWN  &mt LCTRL UP  &mt TAB RIGHT                               &kp PLUS         &kp MINUS     &mt TAB LEFT_BRACKET                        &mt LCTRL RIGHT_BRACKET  &mt LEFT_SHIFT SQT    &mt LEFT_ALT SEMICOLON  &kp BACKSPACE
 &kp DELETE     &kp AT_SIGN        &kp HASH             &kp DOLLAR    &kp PERCENT                                 &kp AMPERSAND    &kp ASTERISK  &kp LEFT_BRACE                              &kp RIGHT_BRACE          &kp PERIOD            &kp COMMA               &kp LS(DELETE)
-                                                       &kp LGUI      &rgb_layer 0 RGB_COLOR_HSB_VAL(227,100,50)  &kp SPACE        &kp RET       &rgb_layer 2 RGB_COLOR_HSB_VAL(294,100,50)  &kp RALT
+                                                       &kp LGUI      &rgb_layer 0 RGB_COLOR_HSB_VAL(360,100,50)  &kp SPACE        &kp RET       &rgb_layer 2 RGB_COLOR_HSB_VAL(232,100,50)  &kp RALT
             >;
         };
 
@@ -72,7 +72,7 @@
 &trans      &trans        &trans        &trans        &trans                                      &trans          &trans  &trans                                    &trans  &trans  &trans  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                                &bt BT_SEL 4    &trans  &trans                                    &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans                                      &trans          &trans  &trans                                    &trans  &trans  &trans  &trans
-                                        &trans        &rgb_layer 2 RGB_COLOR_HSB_VAL(107,100,50)  &trans          &trans  &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &trans
+                                        &trans        &rgb_layer 2 RGB_COLOR_HSB_VAL(241,100,50)  &bootloader     &trans  &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &trans
             >;
         };
     };
