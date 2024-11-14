@@ -21,7 +21,7 @@
         rus_layer: new_macro {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
-            bindings = <&kp LG(ENTER) &macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
+            bindings = <&kp LG(SPACE) &macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
             label = "NEW_MACRO";
         };
     };
