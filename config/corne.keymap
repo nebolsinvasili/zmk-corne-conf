@@ -26,7 +26,21 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        right_return {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <40>;
+            layers = <1>;
+        };
+
+        left_return {
+            bindings = <&none>;
+            key-positions = <37>;
+            layers = <1>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
