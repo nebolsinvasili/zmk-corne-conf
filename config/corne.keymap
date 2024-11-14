@@ -40,7 +40,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        lang {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <14 15>;
+            layers = <0 1 2 3>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
