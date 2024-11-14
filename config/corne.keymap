@@ -33,9 +33,11 @@
         };
 
         rus_lay: rus_lay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&rus &win_enter>;
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_tap>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
 
             label = "RUS_LAY";
         };
@@ -45,7 +47,7 @@
         compatible = "zmk,combos";
 
         ru_layer {
-            bindings = <&rus_lay>;
+            bindings = <&rus_lay 1 RG(ENTER)>;
             key-positions = <36 39>;
             layers = <0>;
         };
