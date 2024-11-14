@@ -41,7 +41,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ru_layer {
+            bindings = <&rus_lay>;
+            key-positions = <36 39>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
