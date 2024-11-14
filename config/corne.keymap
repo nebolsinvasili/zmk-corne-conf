@@ -31,6 +31,13 @@
             bindings = <&kp LG(SPACE) &macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
             label = "ENG_LAYER";
         };
+
+        shift_rgb: new_macro {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &macro_param_2to2 &mt MACRO_PLACEHOLDER MACRO_PLACEHOLDER &rgb_ug RGB_COLOR_HSB(0,0,100)>;
+            label = "NEW_MACRO";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -46,10 +53,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q           &kp W             &kp E         &kp R      &kp T        &kp Y    &kp U                                      &kp I             &kp O             &kp P               &kp ESCAPE
-&kp BACKSPACE  &mt LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D   &mt TAB F  &kp G        &kp H    &mt TAB J                                  &mt LCTRL K       &mt LEFT_SHIFT L  &mt LEFT_ALT SLASH  &kp BACKSPACE
-&kp DELETE     &kp Z           &kp X             &kp C         &kp V      &kp B        &kp N    &kp M                                      &kp COMMA         &kp DOT           &kp SEMI            &kp DELETE
-                                                 &kp LEFT_GUI  &mo 2      &kp SPACE    &kp RET  &rus_layer 1 RGB_COLOR_HSB_VAL(216,99,50)  &kp LG(LEFT_GUI)
+&kp ESCAPE     &kp Q                  &kp W             &kp E         &kp R      &kp T        &kp Y    &kp U                                      &kp I             &kp O             &kp P               &kp ESCAPE
+&kp BACKSPACE  &shift_rgb LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D   &mt TAB F  &kp G        &kp H    &mt TAB J                                  &mt LCTRL K       &mt LEFT_SHIFT L  &mt LEFT_ALT SLASH  &kp BACKSPACE
+&kp DELETE     &kp Z                  &kp X             &kp C         &kp V      &kp B        &kp N    &kp M                                      &kp COMMA         &kp DOT           &kp SEMI            &kp DELETE
+                                                        &kp LEFT_GUI  &mo 2      &kp SPACE    &kp RET  &rus_layer 1 RGB_COLOR_HSB_VAL(216,99,50)  &kp LG(LEFT_GUI)
             >;
         };
 
@@ -94,7 +101,7 @@
 &kp ESCAPE     &kp NUMBER_1           &kp NUMBER_2             &kp NUMBER_3        &kp PLUS                                    &kp ASTERISK    &kp HOME  &kp PAGE_DOWN                               &kp PAGE_UP   &kp END               &kp PRINTSCREEN  &kp ESCAPE
 &kp BACKSPACE  &mt LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LCTRL NUMBER_6  &mt TAB MINUS                               &kp SLASH       &kp LEFT  &mt TAB DOWN                                &mt LCTRL UP  &mt LEFT_SHIFT RIGHT  &kp LEFT_ALT     &kp BACKSPACE
 &kp DELETE     &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9        &kp COMMA                                   &kp PERIOD      &none     &none                                       &none         &none                 &kp K_MENU       &kp DELETE
-                                                               &kp LGUI            &rgb_layer 1 RGB_COLOR_HSB_VAL(246,100,50)  &kp SPACE       &kp RET   &rgb_layer 4 RGB_COLOR_HSB_VAL(121,100,50)  &kp NUMBER_0
+                                                               &kp LGUI            &rus_layer 1 RGB_COLOR_HSB_VAL(215,100,50)  &kp SPACE       &kp RET   &rgb_layer 4 RGB_COLOR_HSB_VAL(121,100,50)  &kp NUMBER_0
             >;
         };
 
