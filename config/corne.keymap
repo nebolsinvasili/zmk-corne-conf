@@ -18,11 +18,11 @@
             label = "RGB_LAYER";
         };
 
-        rus_jump: new_macro {
+        rus_jump: rus_jump {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings = <&kp LG(SPACE) &macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
-            label = "NEW_MACRO";
+            label = "rus_jump";
         };
 
         eng_jump: eng_layer {
@@ -32,11 +32,11 @@
             label = "ENG_LAYER";
         };
 
-        shift_rgb: new_macro {
+        shift_rgb: shift_rgb {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings = <&macro_param_1to1 &macro_param_2to2 &mt MACRO_PLACEHOLDER MACRO_PLACEHOLDER &rgb_ug RGB_COLOR_HSB(0,0,100)>;
-            label = "NEW_MACRO";
+            label = "shift_rgb";
         };
     };
 
