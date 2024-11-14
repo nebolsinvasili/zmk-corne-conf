@@ -106,10 +106,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &kp NUMBER_1           &kp NUMBER_2             &kp NUMBER_3        &kp PLUS                                  &kp ASTERISK        &kp HOME  &kp PAGE_DOWN                               &kp PAGE_UP                                 &kp END               &kp PRINTSCREEN  &kp ESCAPE
-&kp BACKSPACE  &mt LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LCTRL NUMBER_6  &mt TAB MINUS                             &kp SLASH           &kp LEFT  &mt TAB DOWN                                &mt LCTRL UP                                &mt LEFT_SHIFT RIGHT  &kp LEFT_ALT     &kp BACKSPACE
-&kp DELETE     &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9        &kp NUMBER_0                              &mt COMMA PERIOD    &none     &none                                       &none                                       &none                 &kp K_MENU       &kp DELETE
-                                                               &kp LGUI            &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &kp SPACE           &kp RET   &rgb_layer 1 RGB_COLOR_HSB_VAL(212,100,50)  &rgb_layer 4 RGB_COLOR_HSB_VAL(131,100,50)
+&kp ESCAPE     &kp NUMBER_1           &kp NUMBER_2             &kp NUMBER_3        &kp PLUS                                  &kp ASTERISK        &kp HOME  &kp PAGE_DOWN                             &kp PAGE_UP                                 &kp END               &kp PRINTSCREEN  &kp ESCAPE
+&kp BACKSPACE  &mt LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LCTRL NUMBER_6  &mt TAB MINUS                             &kp SLASH           &kp LEFT  &mt TAB DOWN                              &mt LCTRL UP                                &mt LEFT_SHIFT RIGHT  &kp LEFT_ALT     &kp BACKSPACE
+&kp DELETE     &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9        &kp NUMBER_0                              &mt COMMA PERIOD    &none     &none                                     &none                                       &none                 &kp K_MENU       &kp DELETE
+                                                               &kp LGUI            &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &kp SPACE           &kp RET   &rgb_layer 1 RGB_COLOR_HSB_VAL(0,100,50)  &rgb_layer 4 RGB_COLOR_HSB_VAL(131,100,50)
             >;
         };
 
@@ -118,7 +118,7 @@
 &trans      &trans        &trans        &trans        &trans                                      &trans          &trans  &trans                                    &trans  &trans  &trans  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                                &bt BT_SEL 4    &trans  &trans                                    &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans                                      &trans          &trans  &trans                                    &trans  &trans  &trans  &trans
-                                        &trans        &rgb_layer 3 RGB_COLOR_HSB_VAL(279,100,50)  &bootloader     &trans  &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &trans
+                                        &trans        &rgb_layer 3 RGB_COLOR_HSB_VAL(214,100,50)  &bootloader     &trans  &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &trans
             >;
         };
     };
