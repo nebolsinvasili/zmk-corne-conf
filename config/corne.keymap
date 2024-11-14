@@ -68,10 +68,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q           &kp W             &kp E        &kp R                                    &mt GRAVE T    &kp Y    &kp U                                      &kp I        &kp O             &kp P              &kp LEFT_BRACKET
-&kp BACKSPACE  &mt LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D  &mt TAB F                                &kp G          &kp H    &mt TAB J                                  &mt LCTRL K  &mt LEFT_SHIFT L  &mt LEFT_ALT SEMI  &kp SQT
-&kp DELETE     &kp Z           &kp X             &kp C        &kp V                                    &kp B          &kp N    &mt RIGHT_BRACKET M                        &kp COMMA    &kp DOT           &kp FSLH           &none
-                                                 &kp LGUI     &eng_jump 0 RGB_COLOR_HSB_VAL(0,100,50)  &kp SPACE      &kp RET  &eng_jump 3 RGB_COLOR_HSB_VAL(279,100,50)  &kp RALT
+&kp ESCAPE     &kp Q           &kp W             &kp E        &kp R      &mt GRAVE T    &kp Y    &kp U                                    &kp I                                      &kp O             &kp P              &kp LEFT_BRACKET
+&kp BACKSPACE  &mt LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D  &mt TAB F  &kp G          &kp H    &mt TAB J                                &mt LCTRL K                                &mt LEFT_SHIFT L  &mt LEFT_ALT SEMI  &kp SQT
+&kp DELETE     &kp Z           &kp X             &kp C        &kp V      &kp B          &kp N    &mt RIGHT_BRACKET M                      &kp COMMA                                  &kp DOT           &kp FSLH           &none
+                                                 &kp LGUI     &sl 2      &kp SPACE      &kp RET  &eng_jump 0 RGB_COLOR_HSB_VAL(0,100,50)  &eng_jump 3 RGB_COLOR_HSB_VAL(278,100,50)
             >;
         };
 
