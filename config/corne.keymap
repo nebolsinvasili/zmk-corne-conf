@@ -36,7 +36,7 @@
         };
 
         left_return {
-            bindings = <&none>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <37>;
             layers = <1>;
         };
