@@ -80,7 +80,7 @@
         HMLS: HMLS {
             compatible = "zmk,behavior-hold-tap";
             label = "HMLS";
-            bindings = <&mo>, <&kp>;
+            bindings = <&to>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
