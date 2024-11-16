@@ -63,6 +63,31 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
             hold-trigger-on-release;
         };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <38 6 30 18 31 19 7 32 20 8 33 21 9 34 22 10 35 23 11 37 36 39 40 41>;
+        };
+
+        HMLS: HMLS {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMLS";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <39>;
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -76,10 +101,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q           &kp W             &kp E         &kp R      &kp T        &kp Y      &kp U       &kp I         &kp O              &kp P                &kp ESCAPE
-&kp BACKSPACE  &mt LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D   &mt TAB F  &kp G        &kp H      &HMR TAB J  &HMR LCTRL K  &HMR LEFT_SHIFT L  &HMR LEFT_ALT SLASH  &kp BACKSPACE
-&kp DELETE     &kp Z           &kp X             &kp C         &kp V      &kp B        &kp N      &kp M       &kp COMMA     &kp DOT            &kp SEMI             &kp DELETE
-                                                 &kp LEFT_GUI  &sl 2      &kp SPACE    &kp ENTER  &mo 3       &kp LEFT_WIN
+&kp ESCAPE     &kp Q            &kp W              &kp E                &kp R       &kp T        &kp Y          &kp U       &kp I                &kp O              &kp P                &kp ESCAPE
+&kp BACKSPACE  &HML LEFT_ALT A  &HML LEFT_SHIFT S  &HML LCTRL D         &HML TAB F  &kp G        &kp H          &HMR TAB J  &HMR LCTRL K         &HMR LEFT_SHIFT L  &HMR LEFT_ALT SLASH  &kp BACKSPACE
+&kp DELETE     &kp Z            &kp X              &kp C                &kp V       &kp B        &kp N          &kp M       &kp COMMA            &kp DOT            &kp SEMI             &kp DELETE
+                                                   &HMR LEFT_GUI TILDE  &none       &kp SPACE    &HMLS 1 ENTER  &to 2       &HMR LEFT_WIN MINUS
             >;
         };
 
@@ -91,10 +116,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q           &kp W             &kp E        &kp R      &mt GRAVE T    &kp Y        &kp U                                       &kp I         &kp O             &kp P              &kp LEFT_BRACKET
-&kp BACKSPACE  &mt LEFT_ALT A  &mt LEFT_SHIFT S  &mt LCTRL D  &mt TAB F  &kp G          &kp H        &mt TAB J                                   &mt LCTRL K   &mt LEFT_SHIFT L  &mt LEFT_ALT SEMI  &kp SQT
-&kp DELETE     &kp Z           &kp X             &kp C        &kp V      &kp B          &kp N        &mt RIGHT_BRACKET M                         &kp COMMA     &kp DOT           &kp FSLH           &none
-                                                 &kp LGUI     &sl 2      &kp SPACE      &lt 0 ENTER  &rgb_layer 3 RGB_COLOR_HSB_VAL(219,100,50)  &kp LEFT_WIN
+&kp ESCAPE     &kp Q            &kp W              &kp E         &kp R       &mt GRAVE T    &kp Y          &kp U                 &kp I         &kp O              &kp P               &kp LEFT_BRACKET
+&kp BACKSPACE  &HML LEFT_ALT A  &HML LEFT_SHIFT S  &HML LCTRL D  &HML TAB F  &kp G          &kp H          &HMR TAB J            &HMR LCTRL K  &HMR LEFT_SHIFT L  &HMR LEFT_ALT SEMI  &kp SQT
+&kp DELETE     &kp Z            &kp X              &kp C         &kp V       &kp B          &kp N          &HMR RIGHT_BRACKET M  &kp COMMA     &kp DOT            &kp FSLH            &none
+                                                   &kp LGUI      &none       &kp SPACE      &HMLS 0 ENTER  &to 2                 &kp LEFT_WIN
             >;
         };
 
@@ -106,10 +131,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &kp EXCL           &kp QUESTION         &kp CARET     &kp PIPE       &kp ASTERISK     &kp SLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NON_US_BACKSLASH      &kp TILDE         &kp ESCAPE
-&kp BACKSPACE  &mt LEFT_ALT LEFT  &mt LEFT_SHIFT DOWN  &mt LCTRL UP  &mt TAB RIGHT  &kp PLUS         &kp MINUS     &mt TAB LEFT_BRACKET  &mt LCTRL RIGHT_BRACKET  &mt LEFT_SHIFT SEMICOLON  &mt LEFT_ALT SQT  &kp BACKSPACE
-&kp DELETE     &kp AT_SIGN        &kp HASH             &kp DOLLAR    &kp PERCENT    &kp AMPERSAND    &kp ASTERISK  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp COMMA                 &kp PERIOD        &kp LS(DELETE)
-                                                       &kp LGUI      &none          &kp SPACE        &kp RET       &none                 &kp LG(LEFT_WIN)
+&kp ESCAPE     &kp MINUS     &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt PIPE NUMBER_9   &kp EQUAL               &none          &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS     &kp NON_US_BACKSLASH       &kp TILDE                &kp ESCAPE
+&kp BACKSPACE  &kp SLASH     &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6  &kp ASTERISK            &none          &HMR TAB LEFT_BRACKET  &HMR LCTRL RIGHT_BRACKET  &HMR LEFT_SHIFT SEMICOLON  &HMR LEFT_ALT LS(MINUS)  &kp BACKSPACE
+&kp DELETE     &kp NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3   &mt LS(COMMA) PERIOD    &none          &kp LEFT_BRACE         &kp RIGHT_BRACE           &kp COMMA                  &kp PERIOD               &kp DELETE
+                                                       &none                  &to 0               &kp SPACE               &HMLS 1 ENTER  &to 3                  &kp LEFT_WIN
             >;
         };
 
@@ -121,19 +146,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &kp NUMBER_1           &kp NUMBER_2             &kp NUMBER_3        &kp PLUS                                  &kp ASTERISK        &kp HOME  &kp PAGE_DOWN                             &kp PAGE_UP                                 &kp END               &kp PRINTSCREEN  &kp ESCAPE
-&kp BACKSPACE  &mt LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LCTRL NUMBER_6  &mt TAB MINUS                             &kp SLASH           &kp LEFT  &mt TAB DOWN                              &mt LCTRL UP                                &mt LEFT_SHIFT RIGHT  &kp LEFT_ALT     &kp BACKSPACE
-&kp DELETE     &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9        &kp NUMBER_0                              &mt COMMA PERIOD    &none     &none                                     &none                                       &none                 &kp K_MENU       &kp DELETE
-                                                               &kp LGUI            &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &kp SPACE           &kp RET   &rgb_layer 1 RGB_COLOR_HSB_VAL(0,100,50)  &rgb_layer 4 RGB_COLOR_HSB_VAL(131,100,50)
+&kp ESCAPE     &none                   &none                     &none                &none           &none    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP    &kp END                &kp PRINTSCREEN            &kp ESCAPE
+&kp BACKSPACE  &HML LEFT_ALT NUMBER_4  &HML LEFT_SHIFT NUMBER_5  &HML LCTRL NUMBER_6  &HML TAB MINUS  &none    &kp LEFT       &HMR TAB DOWN  &HMR LCTRL UP  &HMR LEFT_SHIFT RIGHT  &HMR LEFT_ALT PRINTSCREEN  &kp BACKSPACE
+&kp DELETE     &none                   &none                     &none                &none           &none    &none          &none          &none          &none                  &kp K_MENU                 &kp DELETE
+                                                                 &kp LGUI             &to 0           &none    &HMLS 1 ENTER  &to 4          &none
             >;
         };
 
         control_layer {
             bindings = <
-&trans      &trans        &trans        &trans        &trans                                      &trans          &trans  &trans                                    &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                                &bt BT_SEL 4    &trans  &trans                                    &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans                                      &trans          &trans  &trans                                    &trans  &trans  &trans  &trans
-                                        &trans        &rgb_layer 3 RGB_COLOR_HSB_VAL(214,100,50)  &bootloader     &trans  &rgb_layer 0 RGB_COLOR_HSB_VAL(0,100,50)  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &to 3         &bootloader     &trans  &to 0   &trans
             >;
         };
     };
