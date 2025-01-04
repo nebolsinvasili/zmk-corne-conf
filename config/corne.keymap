@@ -101,10 +101,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q            &kp W              &kp E                &kp R       &kp T        &kp Y          &kp U       &kp I                &kp O              &kp P                &kp ESCAPE
-&kp BACKSPACE  &HML LEFT_ALT A  &HML LEFT_SHIFT S  &HML LCTRL D         &HML TAB F  &kp G        &kp H          &HMR TAB J  &HMR LCTRL K         &HMR LEFT_SHIFT L  &HMR LEFT_ALT SLASH  &kp BACKSPACE
-&kp DELETE     &kp Z            &kp X              &kp C                &kp V       &kp B        &kp N          &kp M       &kp COMMA            &kp DOT            &kp SEMI             &kp DELETE
-                                                   &HMR LEFT_GUI TILDE  &none       &kp SPACE    &HMLS 1 ENTER  &to 2       &HMR LEFT_WIN MINUS
+&kp ESCAPE     &kp Q            &kp W              &kp E         &kp R       &kp T        &kp Y      &kp U       &kp I         &kp O              &kp P                &kp ESCAPE
+&kp BACKSPACE  &HML LEFT_ALT A  &HML LEFT_SHIFT S  &HML LCTRL D  &HML TAB F  &kp G        &kp H      &HMR TAB J  &HMR LCTRL K  &HMR LEFT_SHIFT L  &HMR LEFT_ALT SLASH  &kp BACKSPACE
+&kp DELETE     &kp Z            &kp X              &kp C         &kp V       &kp B        &kp N      &kp M       &kp COMMA     &kp DOT            &kp SEMI             &kp DELETE
+                                                   &kp LEFT_GUI  &to 1       &kp SPACE    &kp ENTER  &to 2       &kp LEFT_WIN
             >;
         };
 
@@ -116,10 +116,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q            &kp W              &kp E         &kp R       &mt GRAVE T    &kp Y          &kp U                 &kp I         &kp O              &kp P               &kp LEFT_BRACKET
-&kp BACKSPACE  &HML LEFT_ALT A  &HML LEFT_SHIFT S  &HML LCTRL D  &HML TAB F  &kp G          &kp H          &HMR TAB J            &HMR LCTRL K  &HMR LEFT_SHIFT L  &HMR LEFT_ALT SEMI  &kp SQT
-&kp DELETE     &kp Z            &kp X              &kp C         &kp V       &kp B          &kp N          &HMR RIGHT_BRACKET M  &kp COMMA     &kp DOT            &kp FSLH            &none
-                                                   &kp LGUI      &none       &kp SPACE      &HMLS 0 ENTER  &to 2                 &kp LEFT_WIN
+&kp ESCAPE     &kp Q            &kp W              &kp E         &kp R       &mt GRAVE T    &kp Y      &kp U                 &kp I         &kp O              &kp P               &kp LEFT_BRACKET
+&kp BACKSPACE  &HML LEFT_ALT A  &HML LEFT_SHIFT S  &HML LCTRL D  &HML TAB F  &kp G          &kp H      &HMR TAB J            &HMR LCTRL K  &HMR LEFT_SHIFT L  &HMR LEFT_ALT SEMI  &kp SQT
+&kp DELETE     &kp Z            &kp X              &kp C         &kp V       &kp B          &kp N      &HMR RIGHT_BRACKET M  &kp COMMA     &kp DOT            &kp FSLH            &none
+                                                   &kp LGUI      &to 0       &kp SPACE      &kp ENTER  &to 2                 &kp LEFT_WIN
             >;
         };
 
@@ -131,10 +131,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &kp MINUS     &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt PIPE NUMBER_9   &kp EQUAL               &none          &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS     &kp NON_US_BACKSLASH       &kp TILDE                &kp ESCAPE
-&kp BACKSPACE  &kp SLASH     &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6  &kp ASTERISK            &none          &HMR TAB LEFT_BRACKET  &HMR LCTRL RIGHT_BRACKET  &HMR LEFT_SHIFT SEMICOLON  &HMR LEFT_ALT LS(MINUS)  &kp BACKSPACE
-&kp DELETE     &kp NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3   &mt LS(COMMA) PERIOD    &none          &kp LEFT_BRACE         &kp RIGHT_BRACE           &kp COMMA                  &kp PERIOD               &kp DELETE
-                                                       &none                  &to 0               &kp SPACE               &HMLS 1 ENTER  &to 3                  &kp LEFT_WIN
+&kp ESCAPE     &kp MINUS     &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt PIPE NUMBER_9   &kp EQUAL               &none      &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS     &kp NON_US_BACKSLASH       &kp TILDE                &kp ESCAPE
+&kp BACKSPACE  &kp SLASH     &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6  &kp ASTERISK            &none      &HMR TAB LEFT_BRACKET  &HMR LCTRL RIGHT_BRACKET  &HMR LEFT_SHIFT SEMICOLON  &HMR LEFT_ALT LS(MINUS)  &kp BACKSPACE
+&kp DELETE     &kp NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3   &mt LS(COMMA) PERIOD    &none      &kp LEFT_BRACE         &kp RIGHT_BRACE           &kp COMMA                  &kp PERIOD               &kp DELETE
+                                                       &kp LGUI               &to 1               &kp SPACE               &kp ENTER  &to 3                  &kp LEFT_WIN
             >;
         };
 
@@ -146,10 +146,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &none                   &none                     &none                &none           &none    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP    &kp END                &kp PRINTSCREEN            &kp ESCAPE
-&kp BACKSPACE  &HML LEFT_ALT NUMBER_4  &HML LEFT_SHIFT NUMBER_5  &HML LCTRL NUMBER_6  &HML TAB MINUS  &none    &kp LEFT       &HMR TAB DOWN  &HMR LCTRL UP  &HMR LEFT_SHIFT RIGHT  &HMR LEFT_ALT PRINTSCREEN  &kp BACKSPACE
-&kp DELETE     &none                   &none                     &none                &none           &none    &none          &none          &none          &none                  &kp K_MENU                 &kp DELETE
-                                                                 &kp LGUI             &to 0           &none    &HMLS 1 ENTER  &to 4          &none
+&kp ESCAPE     &none                   &none                     &none                &none           &none    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP    &kp END                &kp PRINTSCREEN                &kp ESCAPE
+&kp BACKSPACE  &HML LEFT_ALT NUMBER_4  &HML LEFT_SHIFT NUMBER_5  &HML LCTRL NUMBER_6  &HML TAB MINUS  &none    &kp LEFT   &HMR TAB DOWN  &HMR LCTRL UP  &HMR LEFT_SHIFT RIGHT  &HMR LEFT_ALT LC(PRINTSCREEN)  &kp BACKSPACE
+&kp DELETE     &none                   &none                     &none                &none           &none    &none      &none          &none          &none                  &kp K_MENU                     &kp DELETE
+                                                                 &kp LGUI             &to 0           &to 2    &kp ENTER  &to 4          &none
             >;
         };
 
