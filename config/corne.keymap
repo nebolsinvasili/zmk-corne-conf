@@ -134,7 +134,7 @@
 &kp ESCAPE     &mt MINUS LS(EQUAL)  &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt PIPE NUMBER_9   &mt ASTERISK SLASH    &kp BACKSLASH   &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS     &kp NON_US_BACKSLASH       &kp TILDE            &kp ESCAPE
 &kp BACKSPACE  &kp EQUAL            &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6  &kp ASTERISK          &kp UNDERSCORE  &HMR TAB LEFT_BRACKET  &HMR LCTRL RIGHT_BRACKET  &HMR LEFT_SHIFT SEMICOLON  &HMR LEFT_ALT COLON  &kp BACKSPACE
 &kp DELETE     &kp NUMBER_0         &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3   &kp LS(COMMA)         &none           &kp LEFT_BRACE         &kp RIGHT_BRACE           &kp COMMA                  &kp PERIOD           &kp DELETE
-                                                              &kp LGUI               &to 1               &kp SPACE             &kp ENTER       &to 3                  &kp LEFT_WIN
+                                                              &kp LGUI               &to 0               &kp SPACE             &kp ENTER       &to 3                  &kp LEFT_WIN
             >;
         };
 
