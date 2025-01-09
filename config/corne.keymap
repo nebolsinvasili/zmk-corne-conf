@@ -7,48 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
-    macros {
-        rgb_layer: rgb_layer {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
-            label = "RGB_LAYER";
-        };
-
-        rus_jump: rus_jump {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings = <&kp LG(SPACE) &macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
-            label = "rus_jump";
-        };
-
-        eng_jump: eng_layer {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings = <&kp LG(SPACE) &macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>;
-            label = "ENG_LAYER";
-        };
-
-        shift_rgb: shift_rgb {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings = <&macro_param_1to1 &macro_param_2to2 &mt MACRO_PLACEHOLDER MACRO_PLACEHOLDER &rgb_ug RGB_COLOR_HSB(0,0,100)>;
-            label = "shift_rgb";
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        lang {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <14 15>;
-            layers = <0 1 2 3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         HMR: HMR {
