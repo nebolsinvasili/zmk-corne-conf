@@ -10,15 +10,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        fsedf {
-            bindings = <&new_macro k>;
-            key-positions = <38 41>;
-            layers = <0 1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         HMR: HMR {
@@ -57,15 +49,6 @@
             quick-tap-ms = <175>;
             hold-trigger-key-positions = <39>;
             hold-trigger-on-release;
-        };
-    };
-
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings = <&macro_param_1to2 &macro_param_2to2 &tog 0 MACRO_PLACEHOLDER &kp>;
-            label = "NEW_MACRO";
         };
     };
 
