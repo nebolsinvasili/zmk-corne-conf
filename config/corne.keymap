@@ -9,15 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        rus {
-            bindings = <&to 1>;
-            key-positions = <38 41>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         HMR: HMR {
@@ -56,13 +48,6 @@
             quick-tap-ms = <175>;
             hold-trigger-key-positions = <39>;
             hold-trigger-on-release;
-        };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-key-toggle";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <1>;
-            toggle-mode = "flip";
         };
     };
 
