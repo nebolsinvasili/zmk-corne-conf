@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         rus {
-            bindings = <&tog 1>;
+            bindings = <&to 1>;
             key-positions = <38 41>;
             layers = <0>;
         };
@@ -56,6 +56,13 @@
             quick-tap-ms = <175>;
             hold-trigger-key-positions = <39>;
             hold-trigger-on-release;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-key-toggle";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <1>;
+            toggle-mode = "flip";
         };
     };
 
