@@ -92,10 +92,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &mt MINUS LS(EQUAL)  &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt PIPE NUMBER_9   &mt ASTERISK SLASH    &kp BACKSLASH   &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS     &kp NON_US_BACKSLASH       &kp TILDE            &kp ESCAPE
-&kp BACKSPACE  &kp EQUAL            &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6  &kp ASTERISK          &kp UNDERSCORE  &HMR TAB LEFT_BRACKET  &HMR LCTRL RIGHT_BRACKET  &HMR LEFT_SHIFT SEMICOLON  &HMR LEFT_ALT COLON  &kp BACKSPACE
-&kp DELETE     &kp NUMBER_0         &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3   &kp LS(COMMA)         &none           &kp LEFT_BRACE         &kp RIGHT_BRACE           &kp COMMA                  &kp PERIOD           &kp DELETE
-                                                              &kp LGUI               &to 0               &kp SPACE             &kp ENTER       &to 3                  &kp LEFT_WIN
+&kp ESCAPE     &mt MINUS LS(EQUAL)  &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt PIPE NUMBER_9   &mt ASTERISK SLASH    &kp EXCLAMATION  &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS     &kp NON_US_BACKSLASH       &kp TILDE            &kp ESCAPE
+&kp BACKSPACE  &kp EQUAL            &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6  &kp ASTERISK          &kp UNDERSCORE   &HMR TAB LEFT_BRACKET  &HMR LCTRL RIGHT_BRACKET  &HMR LEFT_SHIFT SEMICOLON  &HMR LEFT_ALT COLON  &kp BACKSPACE
+&kp DELETE     &kp NUMBER_0         &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3   &kp LS(COMMA)         &kp QUESTION     &kp LEFT_BRACE         &kp RIGHT_BRACE           &kp COMMA                  &kp PERIOD           &kp DELETE
+                                                              &kp LGUI               &to 0               &kp SPACE             &kp ENTER        &to 3                  &kp LEFT_WIN
             >;
         };
 
@@ -107,9 +107,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE     &none                   &none                     &none                &none           &none    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP    &kp END                &kp PRINTSCREEN                &kp ESCAPE
+&kp ESCAPE     &kp NUMBER_1            &kp NUMBER_2              &kp NUMBER_3         &none           &none    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP    &kp END                &kp PRINTSCREEN                &kp ESCAPE
 &kp BACKSPACE  &HML LEFT_ALT NUMBER_4  &HML LEFT_SHIFT NUMBER_5  &HML LCTRL NUMBER_6  &HML TAB MINUS  &none    &kp LEFT   &HMR TAB DOWN  &HMR LCTRL UP  &HMR LEFT_SHIFT RIGHT  &HMR LEFT_ALT LC(PRINTSCREEN)  &kp BACKSPACE
-&kp DELETE     &none                   &none                     &none                &none           &none    &none      &none          &none          &none                  &kp K_MENU                     &kp DELETE
+&kp DELETE     &kp NUMBER_7            &kp NUMBER_8              &kp NUMBER_9         &none           &none    &none      &none          &none          &none                  &kp K_MENU                     &kp DELETE
                                                                  &kp LGUI             &to 0           &to 2    &kp ENTER  &to 4          &none
             >;
         };
