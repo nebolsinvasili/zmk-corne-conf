@@ -15,11 +15,7 @@
         rus {
             bindings = <&tog 1>;
             key-positions = <38 41>;
-        };
-
-        eng {
-            bindings = <&tog 0>;
-            key-positions = <38 41>;
+            layers = <0>;
         };
     };
 
